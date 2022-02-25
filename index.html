@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinerama.uz</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <input id="FC" name="cinema" type="radio" checked>
+    <input id="SC" name="cinema" type="radio" >
+    
+        <div class="navigation">
+            <div class="container">
+                <div class="navBlock">
+                    <div class="logo">
+                        <a href="#">
+                            <svg viewBox="0 0 165 26" xmlns="http://www.w3.org/2000/svg" class="Logo_logoIcon__VjmKn"><g fill="none" fill-rule="evenodd"><path d="M0 0h20.675v25.821H0V0zm13.273 1.832c-6.32 0-11.443 4.96-11.443 11.079 0 6.118 5.123 11.078 11.443 11.078 2.003 0 3.885-.499 5.522-1.374v-3.737a8.401 8.401 0 01-5.522 2.045c-4.571 0-8.277-3.587-8.277-8.012 0-4.426 3.706-8.013 8.277-8.013 2.122 0 4.057.774 5.522 2.045V3.206a11.687 11.687 0 00-5.522-1.374zM22.513 0h6.432v25.821h-6.432V0zm1.771 1.832V23.99h2.756V1.832h-2.756zM30.783 0h20.215v25.821H30.783V0zM32.6 23.989h2.744V9.449l13.723 14.54V1.832h-2.745v14.771L32.601 1.833v22.156zM52.836 0h12.865v25.821H52.836V0zm11.035 21.219h-6.404v-6.924h6.404v-2.77h-6.404V4.603h6.404v-2.77h-9.148V23.99h9.148v-2.77z" fill="#FFF"></path><path d="M67.53 0h18.39v25.821H67.53V0zm8.8 1.832h-7.032V23.99h2.756v-9.694h1.384l6.884 9.694h3.675l-6.963-9.719c2.56-.35 4.847-2.599 4.847-6.219 0-3.949-2.554-6.219-5.551-6.219zM113.507 0h25.746v25.821h-25.746V0zm1.926 23.989h3.172l1.692-12.832 6.197 12.832 6.198-12.832 1.692 12.832h3.171l-3.594-22.157-7.467 15.357-7.466-15.357-3.595 22.157zM141.092 0H165v25.821h-23.908V0zm11.956 1.93L142.926 23.99h3.39l2.409-5.797h8.646l2.409 5.797h3.39L153.048 1.93zM87.76 0h23.907v25.821H87.76V0zm11.896 1.93L89.534 23.99h3.39l2.409-5.797h8.646l2.409 5.797h3.39L99.656 1.93z" fill="#FFFF4D"></path><path d="M72.054 4.602h2.509c2.664 0 4.136 1.402 4.136 3.491 0 2.09-1.308 3.202-4.111 3.202h-2.534V4.602z" fill="#FFFF4D"></path><path d="M102.992 15.816L99.656 7.79l-3.336 8.026h6.672zM156.384 15.816l-3.336-8.026-3.336 8.026h6.672z" fill="#FFFF67"></path></g></svg>
+                        </a>
+                    </div>
+
+                    <nav class="non_response">
+                        <a href="#">Фильмы</a>
+                        <a href="#">Сериалы</a>
+                        <a href="#">ТВ</a>
+                        <a href="#">Мультфильмы</a>
+                        <a href="#">Аниме</a>
+                        <a href="#">Подборки</a>
+                    </nav>
+
+                    <div class="search_sign">
+                        <label class="labelSearch" for="search">
+                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.947 13.771l4.808 4.809a.833.833 0 01-1.18 1.175l-4.808-4.804a8.384 8.384 0 01-5.338 1.906A8.428 8.428 0 010 8.43a8.428 8.428 0 1114.947 5.342zM1.673 8.43c0 3.722 3.029 6.75 6.756 6.75 3.722 0 6.755-3.028 6.755-6.75 0-3.723-3.033-6.756-6.755-6.756A6.763 6.763 0 001.673 8.43z" fill="#fff"></path></svg>
+                        </label>
+
+                        <a class="signBtn" href="#">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filmAd">
+
+        </div>
+
+        <!--Serials-->
+
+
+        <div class="container serialContainer">
+            <div class="cardsBox">
+                <div class="control">
+                    <h1>  Сериалы </h1>
+    
+                    <div class="labelsOf">
+                        <label class="prev" for="FC">
+                            <svg viewBox="0 0 9 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" width="10" height="12"><path d="M7.848 4.703a1.133 1.133 0 01-.025 1.885l-5.457 3.544a1.133 1.133 0 01-1.75-.95V1.885C.615.973 1.638.435 2.39.951l5.457 3.752z"></path></svg>
+                        </label>
+    
+                        <label class="next" for="SC">
+                            <svg viewBox="0 0 9 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" width="10" height="12"><path d="M7.848 4.703a1.133 1.133 0 01-.025 1.885l-5.457 3.544a1.133 1.133 0 01-1.75-.95V1.885C.615.973 1.638.435 2.39.951l5.457 3.752z"></path></svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sliderMain">
+                <div class="sliderRole">
+                    <div class="cardsHome">
+                        <!--1-->
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/23/8b198eb4-bf5d-4d3f-b0ab-1f62e96f1c47-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--2-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/23/22f98b54-2c01-4b8b-b3ae-94d1749032c7-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--3-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2021/03/12/7304abd6-2fbf-45cd-afb2-ca30d23ece75-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--4-->
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/16/caea23d8-3408-42b3-8e8e-ddd2a1f5dbcf-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--5-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/02/18c1071e-3f90-4b2b-9482-fb04b9999e6b-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--6-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/03/164ce9b4-53fe-4787-b607-7db2efdb4efb-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+                    </div>
+
+                    <!-- Second branche -->
+
+                    <div class="cardsHomeNext">
+
+                        <!--1-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/01/22/1615b712-6693-4953-a050-39e9a627419f-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--2-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/21/e859a977-a8d5-46ff-9dfc-ff2a7870c79b-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--3-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/2017/12/13/5a30b6d2bbf113.34806009-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--4-->
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/01/19/6d5c1e40-2372-47a3-a8ae-27fafe58cfe9-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--5-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/02/18c1071e-3f90-4b2b-9482-fb04b9999e6b-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--6-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/03/164ce9b4-53fe-4787-b607-7db2efdb4efb-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Collections -->
+
+        <div class="container collectionContainer">
+
+            <div class="cardsBox">
+                <div class="control">
+                    <h1>Подборки</h1>
+    
+                    <div class="labelsOf">
+                        <label class="prev" for="FCl">
+                            <svg viewBox="0 0 9 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" width="10" height="12"><path d="M7.848 4.703a1.133 1.133 0 01-.025 1.885l-5.457 3.544a1.133 1.133 0 01-1.75-.95V1.885C.615.973 1.638.435 2.39.951l5.457 3.752z"></path></svg>
+                        </label>
+    
+                        <label class="next" for="SCl">
+                            <svg viewBox="0 0 9 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="" width="10" height="12"><path d="M7.848 4.703a1.133 1.133 0 01-.025 1.885l-5.457 3.544a1.133 1.133 0 01-1.75-.95V1.885C.615.973 1.638.435 2.39.951l5.457 3.752z"></path></svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SliderMain for podborniki -->
+
+            <div class="sliderMain">
+                <div class="sliderRole">
+                    <div class="cardsHome">
+                        <!--1-->
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/23/8b198eb4-bf5d-4d3f-b0ab-1f62e96f1c47-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--2-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/23/22f98b54-2c01-4b8b-b3ae-94d1749032c7-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--3-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2021/03/12/7304abd6-2fbf-45cd-afb2-ca30d23ece75-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--4-->
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/02/16/caea23d8-3408-42b3-8e8e-ddd2a1f5dbcf-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        </div>
+
+                    <!-- Second branche -->
+
+                    <div class="cardsHomeNext">
+
+                        <!--1-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/01/22/1615b712-6693-4953-a050-39e9a627419f-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--2-->
+
+                        <div class="card">
+                            <div class="imgStyle">
+                              
+                                <div class="effect">
+                                    <img src="./icon/play.png" alt="">
+                                </div>
+        
+                                <ul class="infoQuality">
+                                    <li> НОВОЕ</li>
+                                    <li>FULL HD</li>
+                                </ul>
+        
+                                <img src="https://files.cinerama.uz/images/posters/2022/02/21/e859a977-a8d5-46ff-9dfc-ff2a7870c79b-c-155x220.jpg" alt="1">
+                            </div>
+        
+                            <div class="filmInfo">
+                                <h3> Адская кухня</h3>
+                                <p> 2005 / Реальное Тв</p>
+                            </div>
+                        </div>
+
+                        <!--3-->
+
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/2017/12/13/5a30b6d2bbf113.34806009-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                        <!--4-->
+                        <div class="card">                            <div class="imgStyle">
+                              
+                            <div class="effect">
+                                <img src="./icon/play.png" alt="">
+                            </div>
+    
+                            <ul class="infoQuality">
+                                <li> НОВОЕ</li>
+                                <li>FULL HD</li>
+                            </ul>
+    
+                            <img src="https://files.cinerama.uz/images/posters/2022/01/19/6d5c1e40-2372-47a3-a8ae-27fafe58cfe9-c-155x220.jpg" alt="1">
+                        </div>
+    
+                        <div class="filmInfo">
+                            <h3> Адская кухня</h3>
+                            <p> 2005 / Реальное Тв</p>
+                        </div></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+</html>
+
