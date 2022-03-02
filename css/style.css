@@ -11,6 +11,10 @@
     display: none;
 }
 
+input {
+    display: none;
+}
+
 @font-face {
     font-family: 'Avenir Next Cyr, sans-serif';
     src: url('../fonts/AvenirNextCyr-Thin.ttf');
@@ -31,6 +35,7 @@ body {
     left: 0;
     top: 0;
     background-color: #16151A;
+    z-index: 500;
 }
 
 .container {
@@ -153,11 +158,11 @@ body {
 
 .sliderMain {
     width: 100%;
+    overflow: hidden;
 }
 
 .sliderRole {
     width: 200%;
-    border: 2px solid red;
     display: flex;
     align-items: flex-start;
 }
@@ -286,4 +291,69 @@ body {
 .nextCard .imgStyle {
     width: 100%;
     height: 159px;
+}
+
+#CC:checked ~ .collectionContainer > .sliderMain > .sliderRole > .cardsHome {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#CC:checked ~ .collectionContainer > .sliderMain > .sliderRole > .cardsHomeNext {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#CC:checked ~ .collectionContainer > .cardsBox > .control > .labelsOf > .prev{
+    background-color: rgb(90, 90, 16);
+}
+
+#NC:checked ~ .collectionContainer > .cardsBox > .control > .labelsOf > .next {
+    background-color: rgb(90, 90, 16);
+}
+
+
+/* serial tv */
+
+#TC:checked ~ .tvContainer > .sliderMain > .sliderRole > .cardsHome {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#TC:checked ~ .tvContainer > .sliderMain > .sliderRole > .cardsHomeNext {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#TC:checked ~ .tvContainer > .cardsBox > .control > .labelsOf > .prev{
+    background-color: rgb(90, 90, 16);
+}
+
+#NT:checked ~ .tvContainer > .cardsBox > .control > .labelsOf > .next {
+    background-color: rgb(90, 90, 16);
+}
+
+.tvContainer .imgStyle {
+    width: 125px !important;
+    height: 125px !important;
+}
+
+/* Movie slider */
+
+
+#MC:checked ~ .filmContainer > .sliderMain > .sliderRole > .cardsHome {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#MC:checked ~ .filmContainer > .sliderMain > .sliderRole > .cardsHomeNext {
+    transform: translateX(0);
+    transition: 0.3s ease;
+}
+
+#MC:checked ~ .filmContainer > .cardsBox > .control > .labelsOf > .prev{
+    background-color: rgb(90, 90, 16);
+}
+
+#MT:checked ~ .filmContainer > .cardsBox > .control > .labelsOf > .next {
+    background-color: rgb(90, 90, 16);
 }
