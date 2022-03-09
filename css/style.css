@@ -353,15 +353,41 @@ body {
 footer {
     margin-top: 70px;
     height: 100px;
-    box-shadow: 0  0 20px #000;
+    box-shadow: 0  0 20px rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.mainFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.littel_footer a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.littel_footer .yellowEffect:hover {
+    color: rgb(238, 255, 0);
+}
+
+.littel_footer .yellowEffect:hover > svg {
+    fill: rgb(238, 255, 0);
+}
+
 .littel_footer_store {
     display: flex;
     align-items: center;
+}
+
+.yellowEffect svg {
+    margin-right: 7px;
 }
 
 .dowwnload {
@@ -371,6 +397,7 @@ footer {
     padding: 8px;
     background-color: #000;
     text-decoration: none;
+    border-radius: 10px; 
 }
 
 .dowwnload p {  
@@ -379,3 +406,28 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.aTop {
+    margin-bottom: 7px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.socialMedia a:nth-of-type(1) {
+    margin-right: 7px;
+}
+
+.socialMedia a:nth-of-type(2) {
+    margin-right: 7px;
+}
+
+.socialFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+
