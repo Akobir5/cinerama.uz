@@ -7,6 +7,11 @@
     outline: none;
 }
 
+::selection {
+    background-color: rgb(238, 255, 0);
+    color: #000;
+}
+
 #FC, #SC {
     display: none;
 }
