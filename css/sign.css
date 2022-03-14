@@ -8,6 +8,12 @@
     outline: none;
 }
 
+
+::selection {
+    background-color: rgb(238, 255, 0);
+    color: #000;
+}
+
 @font-face {
     font-family: 'Avenir Next Cyr, sans-serif';
     src: url('../fonts/AvenirNextCyr-Thin.ttf');
@@ -21,6 +27,10 @@
     background-repeat: no-repeat;
     background-position: top right 100%;
     background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .containerRegist {
@@ -30,9 +40,10 @@
 
 header {
     width: 100%;
-    height: 100px;  
+    height: 130px;  
     display: flex;
     align-items: center;
+    background: linear-gradient(0deg,rgba(22,21,26,.0001),#151419);
 }
 
 .logo {
@@ -73,6 +84,12 @@ form {
     border-right: 1px solid hsla(0,0%,100%,.2);
 }
 
+section {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: -100px;
+}
+
 .formInput input {
     border: none;
     background-color: transparent;
@@ -103,11 +120,6 @@ form {
 .rememberBtn:hover {
     color: #fff;
     transition: 0.3s ease;
-}
-
-::selection {
-    background-color: rgb(238, 255, 0);
-    color: #000;
 }
 
 .rememberBtn:active {
@@ -170,9 +182,6 @@ form {
     transition: 0.3s ease;
 }
 
-
-
-
 .littel_footer_store {
     display: flex;
     align-items: center;
@@ -205,4 +214,70 @@ form {
     font-size: 12px;
     display: flex;
     flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(180deg,rgba(22,21,26,.0001),#151419);
+}
+
+.footerTextInfo {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.yellowEffect {
+    margin-left: 15px;
+}
+
+.line {
+    margin: 0 10px;
+}
+
+.socialConnection {
+    max-width: 528px;
+    margin-top: 70px;
+}
+
+.socialConnection p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    color: #bab9bb;
+}
+
+.network {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.network button {
+    width: 258px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnFacebook {
+    background-color: #3b5998;
+    transition: 0.3s ease;
+}
+
+.btnFacebook:hover {
+    background-color: #4468b6;
+    transition: 0.3s ease;
+}
+
+.btnGoogle {
+    background-color: #db4437;
+    transition: 0.3s ease;
+}
+
+.btnGoogle:hover {
+    background-color: #ee584b;
+    transition: 0.3s ease;
 }
